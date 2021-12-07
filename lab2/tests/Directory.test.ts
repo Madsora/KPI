@@ -27,7 +27,7 @@ describe('Directory', () => {
     it('moving the root directory', () => {
         expect(() => {
         const newDir = new Directory(null, 'newDir');
-        dir.moveTo(newDir);
+        rootDir.moveTo(newDir);
         }).toThrowError();
     });
 
